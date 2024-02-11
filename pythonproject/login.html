@@ -1,0 +1,50 @@
+<html>
+<head>
+	<script type="text/javascript"></script>
+	<style type="text/css">
+		body{
+         background-image: url('back3.webp');
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+  background-size: cover;
+      }
+	</style>
+	<script type="text/javascript">
+		function one(){
+			var io=f.fname.value;
+			var iop=f.k.value;
+			if(io.length<6){
+				alert("username length should be greater than 6 characters");
+			}
+			if(iop.length<6){
+				alert("password length should be greater than 6 characters ");
+			}
+			else{
+				alert("successful")
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<center>
+	<form name="f">
+		<br>
+		<br>
+		<h3>username</h3>
+		<input type="text"  name="fname" >
+		<br>
+		<br>
+		<h3>Email</h3>
+		<input type="email">
+
+		<br>
+		<br>
+		<h3>password</h3>
+		<input type="password" name="k">
+		<br><br>
+		<input type="button" value="submit" onclick="one()">		
+	</form>
+</center>
+</body>
+</html>

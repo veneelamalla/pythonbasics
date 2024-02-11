@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title><style type="text/css">
+		h4{
+			background-color: lavenderblush;
+			width: 500px;
+			color: blueviolet;
+		}
+		body{
+			background-image: url('blue2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+  background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Iterative statements</h1>
+	<p>Iterative statements, also known as loops, in Python are used to repeatedly execute a block of code. The two main types of loops in Python are for and while loops.</p>
+	<h2>1. for loop:</h2>
+	<p>The for loop is used to iterate over a sequence (such as a list, tuple, string, or range) and execute a block of code for each item in the sequence.</p>
+	<h3>using for loop in list iteration</h3>
+	<h4>h=[1,2,3,,4] #list declaration<br>
+		for i in h:<br>
+		    print(i)<br>
+		output: 1 2 3 4
+	</h4>
+	<h3>using for loop in string iteration</h3>
+	<h4>h="apple"<br>
+		for i in h:<br>
+		    print(i)<br>
+		output:a<br>p<br>p<br>l<br>e
+	</h4>
+	<h3>using for loop using range function</h3>
+	<h4>#print 1 to 5 numbers using range function<br>
+		for i in range(1,6):<br>
+		print(i)<br>
+		output: 1 2 3 4 5</h4>
+	<h2>2.while loop</h2>
+	<p>The while loop is used to repeatedly execute a block of code as long as a specified condition is True.</p>
+	<h4>#print 1 to 5 number<br>i=1<br>while(i<=5):<br>print(i)<br>i=i+1<br>output:1 2 3 4 5
+	</h4>
+	<h2>break statement</h2>
+	<p>It is used to exit the loop prematurely based on a certain condition.</p>
+	<h4>for i in range(10):<br>
+    if i == 5:<br>
+        break<br>
+    print(i)<br>
+    output: 0 1 2 3 4
+</h4>
+<h2>continue statement</h2>
+<p>It is used to skip the rest of the code inside the loop for the current iteration and move to the next iteration.</p>
+<h4>for i in range(5):<br>
+    if i == 4:<br>
+        continue<br>
+    print(i)<br>
+    output: 0 1 2 3 5
+</h4>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

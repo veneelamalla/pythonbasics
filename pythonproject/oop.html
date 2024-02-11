@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style >
+		p{
+background-color: lavenderblush;
+color: blueviolet;
+width: 500px;
+		}
+		body{
+			background-image: url('blue2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+  background-size: cover;
+
+		}
+	</style>
+
+</head>
+<body>
+	<h1 align="center">oops concept</h1>
+	<ul><li>Class</li>
+<li>Objects</li>
+<li>Polymorphism</li>
+<li>Encapsulation</li>
+<li>Inheritance</li>
+<li>Data Abstraction</li></ul>
+<h2>1.Class</h2>
+<h4>In Python, a class is a blueprint or template for creating objects. It defines a set of attributes (data members or properties) and methods (functions or behaviors) that the objects created from the class will have. Here is the basic syntax for defining a class in Python:</h4>
+<h3>class syntax</h3>
+<p>class classname:<br>
+	statements<br>
+	....<br>
+	statements
+</p>
+<h3>Example:</h3>
+<p>class one:<br>pass</p>
+<h2>2.objects</h2>
+<h4>In Python, an object is an instance of a class. A class defines a blueprint or template for creating objects, and an object is a concrete instance based on that template. Objects have attributes (data members or properties) and methods (functions or behaviors) associated with them.</h4>
+<h3>syntax</h3>
+<p>class classname:<br>
+	statements<br>
+	....<br>
+	statements<br>
+classname()#object creation</p>
+<h3>Example:</h3>
+<p>class one:<br>
+	def app(self):<br>
+	print("hello")<br>
+	o=app()<br>
+	output:hello</p>
+<h2>3.Polymorphism</h2>
+<h4>Polymorphism is a key concept in object-oriented programming (OOP) that allows objects of different types to be treated as objects of a common base type. In Python, polymorphism is achieved through method overriding and duck typing.<br>There are two types:</h4>
+<ul><li>Method Overriding</li>
+	<li>Method Overloading</li></ul>
+	<h3>Method Overloading</h3>
+	<h4>Two or more methods have the same name but different numbers of parameters or different types of parameters, or both. These methods are called overloaded methods and this is called method overloading. <br>syntax:</h4>
+	<p>class classname:<br>
+		def same_method_name():<br>
+		statements<br>
+		def same_method_name():<br>
+		statements
+	</p>
+	<h4>Example:</h4>
+	<p>class apple:<br>
+	def add(self,a,b):<br>
+	print(a+b)<br>
+	def add(self,a,b,c):<br>
+	print(a+b+c)<br>
+	v=apple()<br>
+	v.add(2,3)<br>
+	v.add(1,2,3)<br>output:5 <br>6</p>
+	<h3>Method Overriding</h3>
+	<h4>Method overriding is an ability of any object-oriented programming language that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.<br>syntax:</h4>
+	<p>class parentclassname:
+		<br>def same_class_method(self)<br>statements<br>
+		class childclassname(parentclassname):<br>
+		def same_class_method(self):<br>
+		statements</p>
+	<h4>Example:</h4>
+	<p>class para:<br>
+		def hello(self):<br>
+		print("hello1")<br>
+		class chill(para):<br>
+		def hello(self):<br>
+		print("hello2")<br>
+		o=chill()<br>
+		o.hello()<br>
+		output:hello2</p>
+	<h2>4.Encapsulation</h2>
+	<h4>Encapsulation is one of the fundamental principles of object-oriented programming (OOP) and is supported in Python. It involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit known as a class. The key idea behind encapsulation is to hide the internal details of the object and provide a well-defined interface for interacting with it.<br>
+
+In Python, encapsulation is achieved using private and protected access modifiers. These access modifiers control the visibility of class members, such as attributes and methods, from outside the class. The two main access modifiers used for encapsulation in Python are:</h4>
+<h3>public:</h3>
+<h4>Members with public access are accessible from outside the class.<br>
+No special syntax is needed for public members, as everything is public by default.</h4>
+<h3>public:</h3>
+<h4>public method can be accessed by anyone</h4>
+<p>class aa:<br>
+    def se(self):<br>
+        print("hello")<br>
+class go(aa):<br>
+    pass<br>
+class to(go):<br>
+    pass<br>
+y=to()<br>
+y.se()<br>output:hello</p>
+<h3>Protected:</h3>
+<h4>protected class can be accessed within the same package only
+	</h4>
+	<p>class anty:<br>
+    def _al(self):<br>
+        print("hi")<br>
+class abc(anty):<br>
+    pass<br>
+class yup(abc):<br>
+    pass<br>
+u=yup()<br>
+
+u._al()<br>output:hi</p>
+<h3>Private</h3>
+<h4>private can be accessed within the class only</h4>
+<p>class one:<br>
+    def __sell(self):<br>
+        print("hello")<br>
+class two(one):<br>
+    pass<br>
+class three(two):<br>
+    pass
+   <br>
+u=three()<br>
+u.__sell()<br>
+output:method cannot be called
+</p>
+<br>
+<p>class one:<br>
+    def __sell(self):<br>
+        print("hello")<br>
+    def onep(self):<br>
+        self.__sell()<br>
+u=one()<br>
+u.onep()<br>output:hello</p>
+<h2>5.Inheritance</h2>
+<h4>Inheritance allows us to define a class that inherits all the methods and properties from another class.<br>
+
+<i>Parent class</i> is the class being inherited from, also called base class.<br>
+
+<i>Child class</i> is the class that inherits from another class, also called derived class.<br>there are five types inheritance:</h4>
+<ul><li>Single Inheritance</li>
+<li>Multiple Inheritance</li>
+<li>Multilevel Inheritance</li>
+<li>Hierarchical Inheritance</li>
+<li>Hybrid Inheritance</li></ul>
+<h3>1.Single Inheritance</h3>
+<h4>Single inheritance enables a derived class to inherit properties from a single parent class, thus enabling code reusability and the addition of new features to existing code.
+</h4>
+
+
+<img src="sinin.webp" width="500px">
+<h3>Example:</h3>
+<p>class one:<br>
+	def area(self):<br>
+	print("hello")<br>
+	class two(one):<br>
+	pass<br>
+	p=two()<br>
+	p.area()<br>
+	output:hello
+</p>
+<h3>2.Multiple Inheritance.</h3>
+<h4>When a class can be derived from more than one base class this type of inheritance is called multiple inheritances. In multiple inheritances, all the features of the base classes are inherited into the derived class. 
+
+</h4>
+<img src="mulin.png" width="500px">
+<h3>Example:</h3>
+<p>class one:<br>
+	def area(self):<br>
+	print("hi")<br>
+	class two:<br>
+	def ar(self):<br>
+	print("hi")<br>
+	class three(one,two):<br>
+	pass<br>
+	yu=three()<br>
+	yu.area()<br>
+	output:hi</p>
+
+<h3>3.Multilevel Inheritance</h3>
+<h4>Multilevel Inheritance in Python is a type of Inheritance that involves inheriting a class that has already inherited some other class. That means the derived/subclass class inherits the features of the base class/parent class, and the new derived class inherits the features of the derived class. </h4>
+<img src="multi.png" width="500px">
+<h3>Example:</h3>
+<p>class one:<br>
+	pass<br>
+	class two(one):<br>
+	def area(self):<br>
+	print("hello")<br>
+	class three(two):<br>
+	pass<br>
+	we=three()<br>
+	we.area()<br>
+	output:hello</p>
+<h3>4.Hierarchical Inheritance</h3>
+<h4>When more than one derived class are created from a single base this type of inheritance is called hierarchical inheritance. In this program, we have a parent (base) class and two child (derived) classes.</h4>
+<img src="hie.webp" width="500px">
+<p>class one:<br>
+	def area(self):<br>
+	print("hello")<br>
+	class two(one):<br>
+	pass<br>
+	class three(one):<br>
+	pass<br>
+	io=one()<br>
+	io.area()<br>
+	output:hello</p>
+<h3>5.Hybrid Inheritance</h3>
+<h4>Hybrid Inheritance is a blend of more than one type of inheritance. The class is derived from the two classes as in the multiple inheritance. However, one of the parent classes is not the base class. It is a derived class.</h4>
+<img src="hyb.jpg" width="500px">
+<p>class one:<br>
+	def area(self):<br>
+	print("hi")<br>
+	class two(one):<br>
+	def aty(self):<br>
+	print("hello")<br>
+	class three(one):<br>
+	pass<br>
+	class four(two,three):<br>
+	pass<br>
+	ty=four()<br>
+	ty.aty()<br>
+	output:hello</p>
+	<h2>6.Data Abstraction</h2>
+	<h4>Data abstraction is one of the most essential concepts of Python OOPs which is used to hide irrelevant details from the user and show the details that are relevant to the users. </h4>
+	<h3>Example</h3>
+	<p>from abc import ABC, abstractmethod<br>
+class BaseClass(ABC):<br>
+    @abstractmethod<br>
+    def method_1(self):<br>
+         #empty body<br>
+         pass</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>

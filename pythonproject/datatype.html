@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		p{
+			color: white;
+			background-color: black;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Datatypes</h1>
+	<h4>In programming, a data type is an attribute or classification that specifies which type of value a variable can hold. It defines the kind of data that a variable can represent and the operations that can be performed on that data. Different programming languages support various data types to accommodate different kinds of information and operations.</h4>
+	<center><img src="datatype.png"></center>
+	<h2>Numeric data types</h2>
+	<h4>It is again classified into three types:</h4>
+	<h3>1.integer</h3>
+	<h4>Represents whole numbers without any decimal points.<br>Examples:</h4>
+	<p>#integer<br>
+		a=10<br>
+		type(a)
+	</p>
+	<p>output:<br>
+	"int"</p>
+	<h3>2.float</h3>
+	<h4>Represents numbers with decimal points or in scientific notation.<br>Examples:</h4>
+	<p>#float<br>
+		a=3.78<br>
+	type(a)</p>
+	<p>output<br>
+	"float"</p>
+	<h3>3.complex number</h3>
+	<h4>Represents numbers with real part and imaginary part</h4>
+	<p>#complex number<br>
+		a=2+6j<br>
+		type(a)<br>
+		print(a.real)<br>
+		print(a.img)
+	</p>
+	<p>output:<br>
+		"complex"<br>
+		2<br>6
+
+	</p>
+	<h2>Dictionaries</h2>
+	<h4>In Python, a dictionary is a mutable, unordered collection of key-value pairs. Each key in a dictionary must be unique, and it is associated with a specific value. Dictionaries are useful for organizing and retrieving data based on named keys rather than numerical indices. The data type for dictionaries in Python is dict.</h4>
+	<p>#dictionaries<br>
+	a={'u':1,'t':4,'y':8}<br>
+	type(a)<br>
+	print(a['u'])<br>
+	print(a.keys())<br>
+	print(a.items())</p>
+	<p>output:<br>
+		"dict"<br>
+		dict_keys(['u', 't', 'y'])<br>
+dict_values([1, 4, 8])
+
+	</p>
+	<h2>Boolean</h2>
+	<h4>In Python, the boolean data type is a built-in data type used to represent truth values. The two boolean values in Python are True and False. Booleans are often used in control flow statements, such as conditional statements (if, elif, else) and loops, to make decisions based on conditions.<br>EXamples:</h4>
+	<p>#boolean<br>
+		a=True<br>
+		type(a)<br>
+		</p>
+	<p>output:<br>
+		"bool"</p>
+		<h2>set datatype</h2>
+		<h4>In Python, a set is an unordered and mutable collection of unique elements. The data type for sets is set. Sets are useful for tasks that involve testing membership, eliminating duplicate entries, and performing mathematical operations like union, intersection, difference, and symmetric difference.</h4>
+		<p>#set<br>
+			a={1,2,3,4,5}<br>
+			type(a)<br>
+			a.add(7)
+
+		</p>
+		<p>output:<br>
+			"set"
+		</p>
+		<p>b={4,5}<br>
+			c={4,7}<br>
+			print(b.union(c))<br>
+			print(b.difference(c))<br>
+		print(b.intersection(c))</p>
+		<p>output:<br>
+			{4,5,7}<br>
+			{5}<br>
+			{4}
+		</p>
+
+
+
+
+
+
+
+</body>
+</html>

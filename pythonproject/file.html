@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		p{
+			background-color: lavenderblush;
+			color: blueviolet;
+			width: 500px;
+		}
+		body{
+			background-image: url('blue2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+  background-size: cover;
+}
+
+	</style>
+</head>
+<body>
+	<h1 align="center">File handling</h1>
+	<h4>File handling is a crucial aspect of programming, allowing you to read from and write to files on your computer. Python provides built-in functions and methods to perform file handling operations. Here's an overview of basic file handling in Python:</h4>
+	<h3>1.opening a file<br>syntax</h3>
+	<p>file=open("filename","mode")</p>
+	<h3>Example</h3>
+	<p>#textfile<br>
+		tx.txt<br>how are you?</p>
+	<p>f=open("tx.txt","r")</p>
+	<h3>2.reading a file<br>syntax</h3>
+	<p>file=open("filename","mode")</p>
+	<h3>Example</h3>
+	<p>#yu.txt<br>hi<br>how are you</p>
+	<p>f=open("yu.txt","r")<br>
+		o=f.read()<br>print(o)
+		<br>output:hi<br>how are you</p>
+	<h3>3.reading the file upto given index<br>Syntax</h3>
+
+	<p>#ui.txt<br>hello hi</p>
+	<h3>Example</h3>
+	<p>f=open("ui.txt","r")
+		<br>o=f.read(5)<br>print(o)
+		<br>output:hello</p>
+		<h3>4.reading the file line by line</h3>
+		<p>#yu.txt<br>hi<br>how are you</p>
+		<p>f=open("yu.txt","r")<br>
+		o=f.readline()<br>print(o)<br>output:hi<br>how are you</p>
+		<h3>4.reading the file in list</h3>
+		<p>#yu.txt<br>hi<br>how are you</p>
+		<p>f=open("yu.txt","r")<br>
+		o=f.readlines()<br>print(o)
+		<br>output:["hi","how are you"]
+	</p>
+	<h3>5.writing on file<br>syntax</h3>
+	<p>file=open("filename","mode")<br>
+		file.write("hello")
+	</p>
+	<h3>Example</h3>
+	<p>f=open("tx.txt","w")<br>
+		f.write("hello")
+	</p>
+	<h3>6.closing a file<br>syntax</h3>
+	<p>file.close()</p>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
